@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="0dp"
+    android:background="@color/teal_200">
+
+    <ImageView
+        android:id="@+id/haberresim"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/haberresim"/>
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/haberbaslik"
+        android:layout_toEndOf="@id/haberresim"
+        android:text="HABER İÇERİĞİ"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/haberyazar"
+        android:layout_toEndOf="@id/haberresim"
+        android:text="HABER YAZARI"
+        android:textSize="12dp"
+        android:textColor="@color/white"
+        android:layout_below = "@+id/haberbaslik"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+</RelativeLayout>

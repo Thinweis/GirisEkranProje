@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/design_default_color_surface"
+    tools:context=".AnaEkranActivity">
+
+    <ImageView
+        android:id="@+id/profil"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/profil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/HaberText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HABERLER"
+        android:textColor="@color/design_default_color_on_secondary"
+        android:textSize="40dp"
+        app:layout_constraintBottom_toTopOf="@id/haberler"
+        app:layout_constraintEnd_toStartOf="@id/profil"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonCikisYap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="17dp"
+        android:text="Çıkış Yap"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/haberekle" />
+
+    <Button
+        android:id="@+id/haberekle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="17dp"
+        android:text="Haber Ekle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/buttonCikisYap"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/haberler"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/buttonCikisYap"
+        app:layout_constraintTop_toBottomOf="@id/profil"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

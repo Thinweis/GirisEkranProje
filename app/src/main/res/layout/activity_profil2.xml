@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/teal_200"
+    tools:context=".profil2">
+
+    <TextView
+        android:id="@+id/TextAd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="30dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toBottomOf="@id/profilresim"
+        tools:layout_editor_absoluteX="88dp"
+        tools:layout_editor_absoluteY="362dp" />
+
+    <TextView
+        android:id="@+id/TextSoyad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="TextView"
+        android:textSize="30dp"
+        app:layout_constraintTop_toBottomOf="@id/TextAd"
+        tools:layout_editor_absoluteX="88dp"
+        tools:layout_editor_absoluteY="427dp" />
+
+    <TextView
+        android:id="@+id/Textemail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="TextView"
+        android:textSize="30dp"
+        app:layout_constraintTop_toBottomOf="@id/TextSoyad"
+        tools:layout_editor_absoluteX="88dp"
+        tools:layout_editor_absoluteY="427dp" />
+
+    <TextView
+        android:id="@+id/tarih"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="TextView"
+        android:textSize="30dp"
+        app:layout_constraintTop_toBottomOf="@id/Textemail"
+        tools:layout_editor_absoluteX="88dp"
+        tools:layout_editor_absoluteY="427dp" />
+
+    <Button
+        android:id="@+id/buttonAna"
+        android:layout_width="140dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="132dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="139dp"
+        android:foregroundTint="@color/buttonColor"
+        android:insetLeft="0dp"
+        android:insetRight="0dp"
+        android:text="Ana Menüye Dön"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tarih" />
+
+    <ImageView
+        android:id="@+id/profilresim"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/TextAd"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
